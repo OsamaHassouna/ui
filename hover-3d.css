@@ -1,0 +1,68 @@
+/* === === === RESET CODE === === === */
+*, *::before, *::after{box-sizing: border-box;}
+*{margin: 0; padding: 0; font: inherit}
+html{color-scheme: dark light;}
+/* img{width: 100%;} */
+img, picture, video{display: block; max-width: 100%;}
+ul{list-style: none; padding: 0; margin: 0;}
+a {text-decoration: none; transition: 0.2s all ease-in-out;cursor: pointer;}
+a:-webkit-any-link:focus-visible{outline: 0px;}
+h1, h2, h3, h4, h5, h6, p{margin: 0}
+/*** OR  ***/
+input, textarea, button, select{font: inherit}
+/* =-=-= Body =-=-= */
+body {
+    font-family: system-ui;
+    font-size: 1.25rem;
+    color: white;
+    background: #191c29;
+}
+
+
+
+.hover-3d {display: grid;place-content: center;min-height: 100vh;}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.cover {transition: all 0.5s; box-shadow:2px 35px 32px -8px rgba(0, 0, 0, 0.75);}
+.cover::before{ height: 100%;top: 0; background: linear-gradient(to top, transparent 46%,rgba(12, 13, 19, 0.5) 68%,rgba(12, 13, 19) 97% );}
+.cover::after{ height: 120px;bottom: 0; background: linear-gradient(to bottom, transparent 46%,rgba(12, 13, 19, 0.5) 68%,rgba(12, 13, 19) 97% );}
+.cover img {
+    aspect-ratio: 9 /16;
+    object-fit: cover;
+    max-height: 305px;
+    width: 200px;
+}
+.character {position: absolute; opacity: 0; transition: all 0.5s;}
+.title {position: absolute; height: 70px; transition: transform 0.5s;}
+
+
+/* hover */
+.card:hover .cover{
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    transition: all 0.5s;
+}
+.card:hover .title {transform: translate3d(0%, -50px, 100px); transition: transform 0.5s;}
+.cover::before,
+.cover::after {
+    content: '';
+    position: absolute;
+    width: 100%;;
+    opacity: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+.card:hover .cover::before,
+.card:hover .cover::after {opacity: 1;}
+.card:hover .character {
+    opacity: 1;
+    transition: all 0.5s;
+    transform: translate3d(0%, -30%, 100px) rotate(0deg) scale(1.03);
+}
