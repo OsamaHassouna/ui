@@ -18,8 +18,7 @@ body {
     background: #191c29;
 }
 
-
-
+/* === === === HOVER 3D CODE === === === */
 .hover-3d {display: grid;place-content: center;min-height: 100vh;}
 
 .card {
