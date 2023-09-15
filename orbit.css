@@ -1,0 +1,157 @@
+/* === === === RESET CODE === === === */
+*, *::before, *::after{box-sizing: border-box;}
+*{margin: 0; padding: 0; font: inherit}
+html{color-scheme: dark light;}
+/* img{width: 100%;} */
+img, picture, video{display: block; max-width: 100%;}
+ul{list-style: none; padding: 0; margin: 0;}
+a {text-decoration: none; transition: 0.2s all ease-in-out;cursor: pointer;}
+a:-webkit-any-link:focus-visible{outline: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0}
+/*** OR  ***/
+input, textarea, button, select{font: inherit}
+/* =-=-= Body =-=-= */
+body {
+    font-family: system-ui;
+    font-size: 1.25rem;
+    color: #191c29;
+    background: white;
+}
+
+/* === === === ORBIT Variables === === === */
+:root{
+    /* Colors */
+    --green-light: hsl(123deg, 47%, 74%);
+    --green-dark: #2e7f32;
+    --blue-light: hsl(210deg, 47%, 74%);
+    --blue-dark: #2e577f;
+    --orange-light: hsl(34deg, 93%, 77%);
+    --orange-dark: #b66a07;
+    --purple-light: hsl(231deg, 44%, 76%);
+    --purple-dark: #334084;
+    --yellow-light: hsl(54deg, 76%, 79%);
+    --yellow-dark: #afa018;
+    --brown-light: hsl(20deg, 41%, 69%);
+    --brown-dark: #68402c;
+    --red-light: hsl(0deg, 59%, 76%);
+    --red-dark: #922626;
+    --pink-light: hsl(295deg, 42%, 72%);
+    --pink-dark: #6e2f74;
+
+    /* Animation */
+    --speed-rotate: 20s;
+    --speed-start: 0.25s;
+    --speed-throb: 20s;
+    --delay-throb: 0s;
+}
+
+/* === === === ORBIT CODE === === === */
+main {min-height: 100vh; overflow: hidden;}
+
+/* =-= Orbit Core || Center Image =-= */
+.orbit-container .orbit-core {width: 12rem; height: 12rem; z-index: 1;}
+.orbit-list li *,
+.orbit-list li:hover *:last-child,
+.orbit-container .orbit-core:hover img:first-child,
+.orbit-container .orbit-core:hover img:last-child,
+.orbit-container .orbit-core img {transition: opacity 0.5s;}
+
+.orbit-list li p,
+.orbit-list li:hover *:last-child,
+.orbit-container .orbit-core:hover img:last-child{opacity: 0;}
+
+.orbit-list li:hover > *:first-child{opacity: 1;}
+
+.orbit-container,
+.orbit-container .orbit-core{position: relative;}
+
+.orbit-list,
+.orbit-list li,
+.orbit-list li > *,
+.orbit-container .orbit-core img{position: absolute; inset: 0; margin: auto;}
+
+main,
+.orbit-list,
+.orbit-list li,
+.orbit-list li * { display: grid; place-items: center;}
+
+.orbit-list li {width: 8rem; aspect-ratio: 1/1; text-align: center;}
+.orbit-list li > * {width:100%; height:100%;}
+.orbit-list li div{background: var(--bg-icon); border-radius: 100%;}
+.orbit-list li img{aspect-ratio:1/1; object-fit: contain;}
+.orbit-list li p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    line-height: 1;
+    border-radius: 100%;
+    background:var(--bg-text);
+}
+
+/* Positioning */
+.orbit-list{animation: rotate var(--speed-rotate) linear infinite;}
+.orbit-list li{animation: start var(--speed-start) linear alternate-reverse;}
+
+.orbit-list li > *{
+    animation:  rotate var(--speed-rotate) linear reverse infinite,
+                throb 1s  ease-in-out var(--delay-throb) alternate infinite;
+    animation-play-state:var(--rotate-play-state), var(--throb-play-state);
+}
+
+@keyframes rotate {100%{transform: rotate(1turn);}}
+@keyframes start {100%{transform: scale(1.1);}}
+@keyframes throb {100%{scale: 1.1;}}
+
+.orbit-list:hover{animation-play-state: paused; --rotate-play-state:paused}
+.orbit-list:hover li > * {animation-play-state: paused, running;}
+.orbit-list li:hover > *{animation-play-state: paused, paused;}
+
+/* List Items */
+.orbit-list li:nth-child(1) {
+    --delay-throb: 0ms;
+    --bg-icon: var(--orange-light);
+    --bg-text: var(--orange-dark);
+    transform: translate(15rem, 0rem);
+}
+.orbit-list li:nth-child(2) {
+    --delay-throb: 250ms;
+    --bg-icon: var(--blue-light);
+    --bg-text: var(--blue-dark);
+    transform: translate(11rem, 11rem);
+}
+.orbit-list li:nth-child(3) {
+    --delay-throb: 500ms;
+    --bg-icon: var(--green-light);
+    --bg-text: var(--green-dark);
+    transform: translate(0rem, 15rem);
+}
+.orbit-list li:nth-child(4) {
+    --delay-throb: 750ms;
+    --bg-icon: var(--pink-light);
+    --bg-text: var(--pink-dark);
+    transform: translate(-11rem, 11rem);
+}
+.orbit-list li:nth-child(5) {
+    --delay-throb: 1000ms;
+    --bg-icon: var(--red-light);
+    --bg-text: var(--red-dark);
+    transform: translate(-15rem, 0rem);
+}
+.orbit-list li:nth-child(6) {
+    --delay-throb: 1250ms;
+    --bg-icon: var(--brown-light);
+    --bg-text: var(--brown-dark);
+    transform: translate(11rem, -11rem);
+}
+.orbit-list li:nth-child(7) {
+    --delay-throb: 1500ms;
+    --bg-icon: var(--yellow-light);
+    --bg-text: var(--yellow-dark);
+    transform: translate(0rem, -15rem);
+}
+.orbit-list li:nth-child(8) {
+    --delay-throb: 1750ms;
+    --bg-icon: var(--purple-light);
+    --bg-text: var(--purple-dark);
+    transform: translate(-11rem, -11rem);
+}
