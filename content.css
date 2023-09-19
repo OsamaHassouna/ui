@@ -1,0 +1,64 @@
+/* === === === RESET CODE === === === */
+*, *::before, *::after{box-sizing: border-box;}
+*{margin: 0; padding: 0; font: inherit}
+html{color-scheme: dark light;}
+/* img{width: 100%;} */
+img, picture, video{display: block; max-width: 100%;}
+ul{list-style: none; padding: 0; margin: 0;}
+a {text-decoration: none; transition: 0.2s all ease-in-out;cursor: pointer;}
+a:-webkit-any-link:focus-visible{outline: 0px;}
+h1, h2, h3, h4, h5, h6, p{margin: 0}
+/*** OR  ***/
+input, textarea, button, select{font: inherit}
+/*------------*/
+/* Body | RTL */
+body{
+  font-weight: var(--fw-body);
+  font-size: var(--fs-body);
+  color: var(--clr-body);
+  /* background: var(--bg-body); */
+  background-color: var(--clr-white);
+}
+html[dir='rtl'] body{font-family: var(--ff-body-ar);}
+html[dir='ltr'] body{font-family: var(--ff-body-en);}
+/* === === === === MAIN LAYOUT === === === === */
+.wrapper,
+.wrapper > .content{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    padding: 40px 0;
+    position: relative;
+    transition: 0.3s all ease-in-out; 
+    background: rgba(174, 187, 216, 0.20);
+}
+.flex-root {
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0;
+    flex: 1;
+    min-height: 100vh;
+}
+.flex-root .flex-column-fluid {
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.flex-root .flex-row-fluid {
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0;
+    flex: 1 auto;
+    min-width: 0;
+}
+/* aside */
+.flex-root .flex-row-auto {
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+/* =-= ASIDE =-= */
+.cont-aside{flex-direction: column;}
