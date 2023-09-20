@@ -110,8 +110,18 @@ body{
 }
 .cont-aside .aside-menu .menu-link .svg-icon {color: var(--clr-primary);width: 20px;height: 20px;transition: 0.2s all;}
 /* Hover */
-.cont-aside .aside-menu .menu-link:hover {background: var(--clr-primary); color: white; transition: 0.2s all;}
-.cont-aside .aside-menu .menu-link:hover .svg-icon {color: white; transition: 0.2s all;}
+.cont-aside .aside-menu .menu-link:hover,
+.cont-aside .aside-menu .menu-link.active{background: var(--clr-primary); color: white; transition: 0.2s all;}
+.cont-aside .aside-menu .menu-link:hover .svg-icon,
+.cont-aside .aside-menu .menu-link.active .svg-icon {color: white; transition: 0.2s all;}
+/* Aside SUBMENU */
+.cont-aside .aside-menu .sub-menu .menu-link {font-size: 12px; padding-block: 12px;}
+.cont-aside .aside-menu .sub-menu {padding-top: 16px; padding-inline: 12px;}
+.cont-aside .aside-menu .sub-menu > li:not(:last-child) {margin-bottom: 8px;}
+.cont-aside .aside-menu .menu-item.has-menu > .menu-link {padding-inline-end: 40px; position: relative;}
+.cont-aside .aside-menu .menu-item.has-menu > .menu-link .menu-arrow {position: absolute; margin-block: auto; inset-inline-end: 12px;}
+.cont-aside .aside-menu .menu-item.has-menu > .menu-link .menu-arrow svg {width: auto; height: 7px;}
+.cont-aside .aside-menu .menu-item.has-menu > .menu-link[aria-expanded="true"] .menu-arrow {transform: rotate(180deg);}
 /* Aside Fixed  */
 .cont-aside.aside-fixed {position: fixed; top: 0; inset-inline-start: 0; z-index: 1;}
 .cont-aside.aside-fixed ~ .wrapper {margin-inline-start: 270px;}
