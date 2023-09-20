@@ -22,6 +22,11 @@
           <a href="/" class="aside-logo">
             <img src="./content-imgs/logo.svg" alt="Logo" width="122" height="28">
           </a>
+          <a class="cont-btn btn-aside-close" onclick="closeMenu()">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="times">
+              <path fill="currentColor" d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path>
+            </svg>
+          </a>
           <ul class="aside-menu">
             <li class="menu-title">
               <h3>صفحات التسجيل</h3>
@@ -145,6 +150,13 @@
                     </li>
                   </ul>
                 </div>
+                <a class="cont-btn btn-aside" onclick="openMenu()">
+                  <span class="svg-icon">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                </a>
               </div>
             </div>
           </header>
@@ -389,5 +401,16 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <!-- local -->
+    <script>
+      function openMenu() {
+        let menu = document.querySelector('.cont-aside');
+        menu.classList.add('aside-mobile-opened');
+      }
+      function closeMenu() {
+        let menu = document.querySelector('.cont-aside');
+        menu.classList.remove('aside-mobile-opened');
+      }
+    </script>
   </body>
 </html>

@@ -86,15 +86,16 @@ body{
     flex: 0 0 auto;
 }
 /* =-=-=-=-=-= ASIDE =-=-=-=-=-= */
-.cont-aside{max-width: 270px; padding:24px}
-.cont-aside .aside-content {display: flex; flex-direction: column; gap: 20px; min-width: 222px;}
+/* .cont-aside{} */
+.cont-aside .aside-content {display: flex; flex-direction: column; gap: 20px; min-width: 222px;max-width: 270px; padding:24px;padding-inline-end: 10px; background:white}
 .cont-aside .aside-logo {
     display: flex;
     align-items: center;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(30, 83, 245, 0.09);
+    margin-inline-end: 14px;
 }
-.cont-aside .aside-menu {display: flex; flex-direction: column; gap: 4px;}
+.cont-aside .aside-menu {display: flex; flex-direction: column; gap: 4px;overflow-y: auto;max-height: calc(100vh - 100px);height: calc(100vh - 100px); padding: 0 14px;}
 .cont-aside .aside-menu .menu-title h3 {font-size: 12px; font-weight: 400; color: var(--clr-body); margin-bottom: 8px;}
 .cont-aside .aside-menu .menu-link {
     color: var(--clr-body);
@@ -125,6 +126,29 @@ body{
 /* Aside Fixed  */
 .cont-aside.aside-fixed {position: fixed; top: 0; inset-inline-start: 0; z-index: 1;}
 .cont-aside.aside-fixed ~ .wrapper {margin-inline-start: 270px;}
+/* Aside Mobile */
+.cont-btn.btn-aside-close {
+    position: absolute;
+    padding: 4px;
+    height: auto;
+    min-height: auto;
+    border-radius: 4px;
+    inset-inline-end: 24px;
+    top: 26px;
+}
+.cont-btn.btn-aside-close svg {width: 16px; height: 16px;}
+.cont-aside.aside-mobile-opened{transform: translateX(0);}
+.cont-aside::before{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+}
+.cont-aside.aside-mobile-opened::before{content:'';}
+.cont-aside.aside-mobile-opened ~ .wrapper{pointer-events: none;}
 /* =-=-=-=-=-= HEADER =-=-=-=-=-= */
 .cont-header{padding-bottom: 24px; border-bottom: 1px solid rgba(30, 83, 245, 0.09);}
 .cont-header .header-container,
@@ -158,7 +182,7 @@ body{
 .user-info .dropdown-menu li:not(:last-child){margin-bottom: 8px;}
 /* =-=-=-=-= BREADCRUMBS =-=-=-=-= */
 .cont-breadcrumbs {padding: 16px 0px; border-bottom: 1px solid rgba(30, 83, 245, 0.09);}
-.cont-breadcrumbs .breadcrumbs-list {display: flex; align-items: center; gap: 8px;}
+.cont-breadcrumbs .breadcrumbs-list {display: flex; align-items: center; gap: 8px; flex-wrap: wrap;}
 .cont-breadcrumbs .breadcrumbs-list li a {
     font-size: 12px;
     color: #637280;
@@ -180,9 +204,6 @@ body{
     border-radius: 100%;
     background: var(--clr-body);
 }
-/* =-=-=-=-= SCROLLTOP =-=-=-=-= */
-.cont-scrolltop{}
-
 /* === === === === === === === === === === === === === === === */
 /* === === === === === ===  COMPONENTS === === === === === === */
 /* =-=-=-=-=-= SVG =-=-=-=-=-= */
@@ -193,7 +214,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 0 24px;
+    padding: 5px 24px;
     min-height: 48px;
     text-align: center;
     font-size: 16px;
@@ -212,6 +233,7 @@ body{
     background-color: var(--clr-light-success);
     color: var(--clr-success);
 }
+.cont-btn.btn-aside{padding: 12px; background: white;}
 /* =-=-=-=-=-= CARDS =-=-=-=-=-= */
 .cont-card {
     position: relative;
@@ -251,11 +273,13 @@ body{
     border-radius: 8px;
     margin-bottom: 24px;
     gap: 8px;
+    flex-wrap: wrap;
 }
 .cont-content-card .card-details {
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-wrap: wrap;
 }
 .cont-content-card .card-details .details-icon {
     width: 56px;
@@ -281,3 +305,16 @@ body{
 .cont-content-card .card-details .details-icon.icon-light-success{background:var(--clr-light-success); color:var(--clr-success);}
 .cont-content-card .card-details .details-icon.icon-light-warning{background:var(--clr-light-warning); color:var(--clr-warning);}
 .cont-content-card .card-details .details-icon.icon-light-danger{background:var(--clr-light-danger); color:var(--clr-danger);}
+/* === === === === === === === === === === === === === === === */
+/* === === === === === ===  MEDIAQUERY === === === === === === */
+@media screen and (min-width:768px) {
+    .cont-btn.btn-aside,
+    .cont-btn.btn-aside-close{display: none;}
+}
+@media screen and (max-width:767.98px) {
+    .cont-aside{transform: translateX(300px);}
+    .cont-aside.aside-fixed ~ .wrapper{margin-inline-start: 0; border-radius: 0;}
+    .cont-header .user-info .user-welcome p,
+    .user-welcome .dropdown-arrow {display: none;}
+    .cont-header .user-info {min-width: auto;}
+}
