@@ -1,0 +1,184 @@
+:root {
+    --clr-primary: hsl(229 33% 21%);
+    --clr-secondary: #302047;
+    --clr-accent: hsl(21deg 85% 60%);
+
+    --wrapper-padding-inline: 1rem;
+    --wrapper-max-width: 50rem;
+
+    --section-padding-block: 3rem;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: white;
+    background-color: var(--clr-primary);
+    background-image: linear-gradient(to bottom right, blue, purple, red);
+    background-blend-mode: multiply;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    padding-block: var(--section-padding-block);
+}
+
+.primary {
+    color: white;
+    background-color: var(--clr-primary);
+}
+
+.secondary {
+    color: white;
+    background-color: var(--clr-secondary);
+}
+
+.accent {
+    background-color: var(--clr-accent);
+}
+
+.button {
+    display: inline-flex;
+    padding: 0.75em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-primary);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: white;
+}
+
+.wrapper {
+    max-width: var(--wrapper-max-width);
+    margin-inline: auto;
+    padding-inline: var(--wrapper-padding-inline);
+}
+
+/* remove the padding so images can take up the entire height */
+.full-width-split-screen {
+    padding-block: 0;
+}
+
+/* match the section padding for the text blocks for
+  consistency */
+.full-width-split-screen> :not(img) {
+    padding-block: var(--section-padding-block);
+    padding-inline: var(--wrapper-padding-inline);
+}
+
+@media (min-width: 600px) {
+    .full-width-split-screen {
+        /* outermost columns emulate the spacing from the .wrapper
+       while the two inner columns divide the rest of the space
+       into two equal parts */
+        display: grid;
+        grid-template-columns:
+            minmax(var(--wrapper-padding-inline), 1fr) minmax(0, calc(var(--wrapper-max-width) / 2)) minmax(0, calc(var(--wrapper-max-width) / 2)) minmax(var(--wrapper-padding-inline), 1fr);
+
+        /* for positioning the pseudo-elements
+         to fill in the rest of the background*/
+        position: relative;
+    }
+
+    /* ensure the image fill up the entire space available */
+    .full-width-split-screen>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* if the image is on the left, it covers the entire left half */
+    .full-width-split-screen>img:first-child {
+        grid-column: 1 / 3;
+    }
+
+    /* if the image is on the right, it covers the entire right half */
+    .full-width-split-screen>img:last-child {
+        grid-column: 3 / -1;
+    }
+
+    /* make sure text doesn't touch the edge of the viewport 
+     and the content is vertically centered */
+    .full-width-split-screen> :not(img) {
+        display: grid;
+        align-content: center;
+        justify-items: start;
+    }
+
+    /* if the non-image is first, place it in the second column
+       (first column is empty to emulate the .wrapper) */
+    .full-width-split-screen> :not(img):first-child {
+        padding-left: 0;
+        grid-column: 2 / 3;
+    }
+
+    /* if the non-image is last, place it in the third column
+       (fourth column is empty to emulate the .wrapper) */
+    .full-width-split-screen> :not(img):last-child {
+        padding-right: 0;
+        grid-column: 3 / 4;
+    }
+
+    /* at large screens, ensure the background color
+       goes to the edge of the page */
+    .full-width-split-screen> :not(img)::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: inherit;
+    }
+
+    /* ensures the background color fills the entire left side */
+    .full-width-split-screen> :not(img):first-child::before {
+        grid-column: 1 / 2;
+    }
+
+    /* ensures the background color fills the entire right side */
+    .full-width-split-screen> :not(img):last-child::before {
+        grid-column: 4 / 5;
+    }
+}
+
+.yt {
+    --shadow-color: 282deg 10% 10%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    text-decoration: none;
+    color: hsl(282 80% 20%);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.75em 1.25em;
+    background-image: linear-gradient(to right, red, purple, blue 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 350ms;
+    box-shadow: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.05),
+        -1.5px 2.2px 3.8px -0.1px hsl(var(--shadow-color) / 0.19),
+        -3.1px 4.5px 7.9px -0.3px hsl(var(--shadow-color) / 0.33),
+        -6.4px 9.5px 16.5px -0.4px hsl(var(--shadow-color) / 0.47);
+}
+
+.yt:hover,
+.yt:focus {
+    color: white;
+    background-position: left;
+}
