@@ -318,3 +318,49 @@ body{
     .user-welcome .dropdown-arrow {display: none;}
     .cont-header .user-info {min-width: auto;}
 }
+/* === === === === === === === === === === === === === === === */
+/* === === === === === === === === === === === === === === === */
+.cont-header .user-details img {border-radius: 4px;}
+/* === === === === === ===  PROFILE === === === === === === */
+.cont-card.card-profile{
+    padding: 0;
+}
+.card-profile .profile-header {position: relative;}
+.card-profile .profile-header > img {
+    object-fit: cover;
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    max-height: 280px;
+    width: 100%;
+}
+.card-profile .profile-header .user-img{
+    position: absolute;
+    bottom: -70px;
+    inset-inline-start: 45px;
+    width: 140px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+.card-profile .profile-header .user-img img{
+    width: 140px;
+    aspect-ratio: 1;
+    border: 5px solid white;
+    border-radius: 100%;
+    
+}
+.profile-info {padding: 24px; padding-top: 65px;}
+.profile-info .info-item {padding-block: 12px; border-bottom: 1px solid rgba(40, 90, 163, 0.09);}
+.profile-info .info-item:first-child {padding-top: 0;}
+.profile-info .info-item:last-child {border-bottom: 0;}
+.profile-info .info-item h4 {
+    color: #2A3D4C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.profile-info .info-item p{
+    color: #19193E;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+}
