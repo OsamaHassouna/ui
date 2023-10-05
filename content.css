@@ -52,7 +52,7 @@ body{
 .wrapper{
     position: relative;
     padding: 24px 12px;
-    background:#F5F9FD;
+    background:#F6F6FB;
     border-start-start-radius: 32px;
     border-end-start-radius: 32px;
     transition: 0.3s all ease-in-out; 
@@ -428,4 +428,52 @@ body{
 }
 .platform-card .card-body > .cont-btn .svg-icon{
     transform:rotate(90deg);
+}
+
+/* === === === === === === === === === === === === === === === */
+/* === === === === === === === === === === === === === === === */
+.main-title {
+    text-align: center;
+    color: #19193E;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 24px;
+}
+.main-title > span:first-child {display: flex; align-items: center; gap: 5px ;margin-bottom: 20px;}
+.main-title .title-subtitle {color: rgba(25, 25, 62, 0.70);font-size: 16px;font-weight: 400;}
+.links-main .main-title,
+.links-main .main-title > span:first-child {margin-bottom: 0;}
+/* === === === === === === === === === === === === === === === */
+/* === === === === === === === === === === === === === === === */
+.text-start{text-align: start !important;}
+.text-end{text-align: end !important;}
+.separator{height: 1px; margin-bottom: 24px; background: rgba(84, 104, 129, 0.09);}
+.cont-btn.btn-light-primary{
+    --clr-light-primary:#E9F2FF;
+    background: var(--clr-light-primary);
+    color: var(--clr-primary);
+}
+.cont-btn.btn-pill{border-radius: 40vw;}
+.cont-btn.btn-sm{min-height: 40px; font-size: 14px;}
+/* === === === === === === === === === === === === === === === */
+/* === === === === === ===  PLATFORMS && LINKS === === === === === === */
+.flex-root.links-main {flex-direction: column;background: var(--clr-primary);}
+.cont-links-texture{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 135px;
+    background: url('./content-imgs/bg-blocks-links.svg') no-repeat;
+    background-size: cover;
+    padding-inline: 24px;
+}
+.cont-links-texture h2{
+    display: flex;
+    align-items:  center;
+    gap: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
 }
