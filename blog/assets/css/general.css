@@ -1,0 +1,42 @@
+:root{
+  --body-clr: initial;
+  --body-bg: initial;
+  --body-fs: initial;
+  --body-fw: initial;
+  --body-ff-ar: initial;
+  --body-ff-en: initial;
+  
+  --clr-primary: blue;
+  --clr-secondary: grey;
+  --clr-third: lightblue;
+  --clr-success: green;
+  --clr-warning: orange;
+  --clr-danger: red;
+  --clr-info: darkblue;
+  --clr-white: white;
+  --clr-gray: gray;
+  --clr-dark: darkgray;
+  --clr-black: black;
+
+  --fs-xs-min: 1rem;
+  --fs-xs-max: 1rem;
+  --fs-sm-min: 1.5rem;
+  --fs-sm-max: 1.5rem;
+  --fs-md-min: 1.8rem;
+  --fs-md-max: 1.8rem;
+  --fs-lg-min: 1.9rem;
+  --fs-lg-max: 1.9rem;
+  --fs-xl-min: 2rem;
+  --fs-xl-max: 2rem;
+  --fs-ratio: 7.5vw;
+}
+
+/* Body */
+body{
+  color: var(--body-clr);
+  font-size: var(--body-fs);
+  font-weight: var(--body-fw);
+  background: var(--body-bg);
+}
+html[dir="rtl"] body{font-family: var(--body-ff-ar);}
+html[dir="ltr"] body{font-family: var(--body-ff-en);}

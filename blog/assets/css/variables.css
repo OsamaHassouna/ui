@@ -1,0 +1,17 @@
+
+
+
+
+/* === Scroll === */
+.scroll{
+  --scroll-min-height: 100px;
+  --scroll-padding-istart: 10px;
+  --scroll-bg: #E5EEF9;
+  --scroll-clr: #1769CC;
+  --scroll-width: 6px;
+  --scroll-border-width: 0px;
+  --scroll-border-style: solid;
+  --scroll-border-clr: #1769CC;
+  --scroll-track-border-radius: 8px;
+  --scroll-thumb-border-radius: 8px;
+}
