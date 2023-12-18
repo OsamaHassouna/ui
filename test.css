@@ -1,0 +1,72 @@
+/* establish a layer order up-front, from lowest to highest priority */
+@layer reset, defaults, components, utilities, override;
+
+/* import stylesheets into a layer (dot syntax represents nesting) */
+/* @import url('framework.css') layer(components.framework); */
+
+/* add styles to layers */
+@layer reset {
+   /* === === === === === === RESET CODE === === === === === === */
+    *, *::before, *::after{box-sizing: border-box;}
+    *{margin: 0; padding: 0; font: inherit}
+    html{color-scheme: dark light;}
+    /* img{width: 100%;} */
+    img, picture, video{display: block; max-width: 100%;}
+    ul{list-style: none; padding: 0; margin: 0;}
+    a {text-decoration: none; transition: 0.2s all ease-in-out;cursor: pointer;}
+    a:-webkit-any-link:focus-visible{outline: 0px;}
+    h1, h2, h3, h4, h5, h6, p{margin: 0}
+    /*** OR  ***/
+    input, textarea, button, select{font: inherit}
+}
+/* add styles to layers */
+@layer defaults {
+    /* higher specificity, but lower layer priority */
+    a:any-link { color: var(--brand, yellow); }
+}
+/* add styles to layers */
+@layer components {
+    /* high layer priority, despite low specificity */
+    a{ --brand: blue }
+    main{
+        display: flex;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+/* add styles to layers */
+@layer utilities {
+    /* high layer priority, despite low specificity */
+    a{ --brand: red }
+}
+/* add styles to layers */
+@layer override {
+    /* high layer priority, despite low specificity */
+    a{ --brand: green }
+}
+  
+/* un-layered styles have the highest priority */
+a { --brand: purple; }
+
+
+
+
+
+/* • low level reset and normalization styles
+• element defaults, for basic typography and legibility
+• themes, like light and dark modes
+• re-usable patterns that might appear across multiple components
+• layouts and larger page structures
+• individual components
+• overrides and utilities */
+/* @layer
+  reset,
+  default,
+  themes,
+  Modules,
+  layouts,
+  components,
+  utilities; */
