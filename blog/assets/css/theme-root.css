@@ -1,0 +1,32 @@
+:root{
+  --body-clr: #23293F;
+  --body-bg: initial;
+  --body-fs: 1rem;
+  --body-fw: 400;
+  --body-ff-ar: 'Montserrat-Arabic', sans-serif;
+  --body-ff-en: 'Montserrat', sans-serif;
+
+  --clr-primary: blue;
+  --clr-secondary: grey;
+  --clr-third: lightblue;
+  --clr-success: green;
+  --clr-warning: orange;
+  --clr-danger: red;
+  --clr-info: darkblue;
+  --clr-white: white;
+  --clr-gray: gray;
+  --clr-dark: darkgray;
+  --clr-black: black;
+
+  --fs-xs-min: 1rem;
+  --fs-xs-max: 1rem;
+  --fs-sm-min: 1.5rem;
+  --fs-sm-max: 1.5rem;
+  --fs-md-min: 1.8rem;
+  --fs-md-max: 1.8rem;
+  --fs-lg-min: 1.9rem;
+  --fs-lg-max: 1.9rem;
+  --fs-xl-min: 2rem;
+  --fs-xl-max: 2rem;
+  --fs-ratio: 7.5vw;
+}

@@ -1,8 +1,8 @@
 @layer reset, general, layout, components, themes, utilities;
 
-@layer reset {@import url(./reset.css);}
-@layer general {@import url(./general.css);}
-@layer layout {@import url(./layout.css);}
-@layer utilities {@import url(./utilities.css);}
-@layer components {@import url(./components.css);}
-@layer themes {@import url(./theme.css);}
+@import url('./reset.css') layer(reset);
+@import url('./general.css') layer(general);
+@import url('./layout.css') layer(layout);
+@import url('./components.css') layer(components);
+@import url('./theme.css') layer(theme);
+@import url('./utilities.css') layer(utilities);

@@ -1,0 +1,5 @@
+@layer theme.root, theme.variables, theme.modules;
+
+@import url('./theme-root.css') layer(theme.root);
+@import url('./theme-variables.css') layer(theme.variables);
+@import url('./theme-modules.css') layer(theme.modules);

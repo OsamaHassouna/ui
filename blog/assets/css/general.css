@@ -1,37 +1,19 @@
-:root{
-  --body-clr: initial;
-  --body-bg: initial;
-  --body-fs: initial;
-  --body-fw: initial;
-  --body-ff-ar: initial;
-  --body-ff-en: initial;
-  
-  --clr-primary: blue;
-  --clr-secondary: grey;
-  --clr-third: lightblue;
-  --clr-success: green;
-  --clr-warning: orange;
-  --clr-danger: red;
-  --clr-info: darkblue;
-  --clr-white: white;
-  --clr-gray: gray;
-  --clr-dark: darkgray;
-  --clr-black: black;
-
-  --fs-xs-min: 1rem;
-  --fs-xs-max: 1rem;
-  --fs-sm-min: 1.5rem;
-  --fs-sm-max: 1.5rem;
-  --fs-md-min: 1.8rem;
-  --fs-md-max: 1.8rem;
-  --fs-lg-min: 1.9rem;
-  --fs-lg-max: 1.9rem;
-  --fs-xl-min: 2rem;
-  --fs-xl-max: 2rem;
-  --fs-ratio: 7.5vw;
+/* === === === THEME FONTS === === === */
+/* Font URL || RTL Font */
+@font-face {
+  font-family: 'Montserrat-Arabic';
+  src: url('../fonts/ArbFONTS-Montserrat-Arabic-Regular.ttf') format('truetype'),
+  url('../fonts/ArbFONTS-Montserrat-Arabic-Regular.eot') format('embedded-opentype'),
+  url('../fonts/ArbFONTS-Montserrat-Arabic-Regular.woff') format('woff'),
+  url('../fonts/ArbFONTS-Montserrat-Arabic-Regular.woff2') format('woff2'),
+  url("../fonts/ArbFONTS-Montserrat-Arabic-Regular.otf") format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
-/* Body */
+/* Font URL || LTR Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+/* === === BODY === === */
 body{
   color: var(--body-clr);
   font-size: var(--body-fs);
@@ -40,3 +22,39 @@ body{
 }
 html[dir="rtl"] body{font-family: var(--body-ff-ar);}
 html[dir="ltr"] body{font-family: var(--body-ff-en);}
+/* ==== === ==== === ==== === ==== */
+/*         GENERAL CLASSES         */
+/* ==== === ==== === ==== === ==== */
+/* === === SVG === === */
+.svg-icon{display:inline-flex;align-items:center;justify-content:center}
+/* SVG Colors */
+.svg-primary{color:var(--clr-primary,blue)}
+.svg-secondary{color:var(--clr-secondary,grey)}
+.svg-third{color:var(--clr-third,lightblue)}
+.svg-success{color:var(--clr-success,green)}
+.svg-warning{color:var(--clr-warning,orange)}
+.svg-danger{color:var(--clr-danger,red)}
+.svg-info{color:var(--clr-info,darkblue)}
+.svg-white{color:var(--clr-white,white)}
+.svg-gray{color:var(--clr-gray,gray)}
+.svg-dark{color:var(--clr-dark,darkgray)}
+.svg-black{color:var(--clr-black,black)}
+/* ==== === ==== === ==== === ==== */
+/* === === SCROLL === === */
+.scroll{
+  padding-inline-end: var(--scroll-padding-istart);
+  max-height: var(--scroll-min-height);
+  object-fit: contain;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.scroll{scrollbar-width: auto; scrollbar-color: var(--scroll-clr) transparent;}
+.scroll::-webkit-scrollbar {width: var(--scroll-width);}
+.scroll::-webkit-scrollbar-track {background: var(--scroll-bg); border-radius: var(--scroll-border-radius);}
+.scroll::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  background-color: var(--scroll-clr); 
+  border: var(--scroll-border-width) var(--scroll-border-style) var(--scroll-border-clr);
+  border-radius: var(--scroll-thumb-border-radius); 
+}
+/* ==== === ==== === ==== === ==== */

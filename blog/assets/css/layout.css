@@ -1,0 +1,38 @@
+@layer layout.grid, layout.layout;
+
+@import url('../vendors/bootstrap-grid.rtl.css') layer(layout.grid);
+
+@layer layout{
+    /* Header */
+    .rsdblog-header{
+        background-image: url(../media/header-bg-fixed.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2.25rem 0;
+    }
+    .rsdblog-header .nav-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.625rem;
+    }
+    .rsdblog-header .header-toolbar{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .rsdblog-header .header-menu ul{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .rsdblog-header .header-menu ul li a{
+        font-size: 0.875rem;
+        font-weight: 500;
+        Line-height: 1rem;
+        color: var(--clr-body);
+    }
+
+
+
+}
