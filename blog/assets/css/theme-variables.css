@@ -1,1 +1,29 @@
 /* prefix = rsdblog */
+/* =-=-=-=-= Buttons =-=-=-=-= */
+/* .rsdblog-btn{
+  --btn-padding-block: 5px;
+  --btn-padding-inline: 20px;
+  --btn-margin-block: 5px;
+  --btn-margin-inline: 0px;
+  --btn-align: center;
+  --btn-justify-content: center;
+  --btn-gap: 0.5rem;
+  --btn-width: auto;
+  --btn-minwidth: auto;
+  --btn-height: auto;
+  --btn-minheight: 44px;
+  --btn-fs: 0.875rem;
+  --btn-fw: 500;
+  --btn-lineheight: 1.5;
+  --btn-text-decoration: none;
+  --btn-clr: white;
+  --btn-bg: var(--clr-primary);
+  --btn-border-radius: 8px;
+  --btn-border-width: 1px;
+  --btn-border-style: solid;
+  --btn-border-clr: transparent;
+  --btn-opacity: 1;
+  --btn-boxshadow: none;
+  --btn-outline: 0;
+  --btn-disabled-clr: var(--clr-gray);
+} */
