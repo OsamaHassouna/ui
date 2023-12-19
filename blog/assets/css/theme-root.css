@@ -1,6 +1,6 @@
 :root{
   --body-clr: #23293F;
-  --body-bg: initial;
+  --body-bg: rgba(174, 187, 216, 0.1); /* #AEBBD8 / 10%*/
   --body-fs: 1rem;
   --body-fw: 400;
   --body-ff-ar: 'Montserrat-Arabic', sans-serif;

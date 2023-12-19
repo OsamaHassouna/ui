@@ -48,13 +48,19 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.cursor{
-  &-pointer{cursor: pointer;}
-  &-default{cursor: default;}
-}
+
+.cursor-pointer{cursor: pointer;}
+.cursor-default{cursor: default;}
+
 .no-events{pointer-events:none;}
-.dir{
-  &-ltr {direction: ltr;}
-  &-rtl {direction: rtl;}
-}
+
+.dir-ltr {direction: ltr;}
+.dir-rtl {direction: rtl;}
+
+.text-underline{text-decoration: underline;}
+
+/* .max-w-95{max-width: 95%;} */
+
+/* DISPLAY CLASSES */
+.d-inlineblock{display: inline-block;}
 /* ==== === ==== === ==== === ==== */
