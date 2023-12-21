@@ -40,6 +40,54 @@
     margin-bottom: 2.75rem;
   }
 
+  /* Breadcrumbs */
+  .rsdblog-breadcrumbs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    margin-bottom: 2.5rem;
+  }
+  .breadcrumbs-toolbar,
+  .rsdblog-breadcrumbs ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+  .rsdblog-breadcrumbs ul li a{
+    position: relative;
+    color: var(--body-clr-light-50);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+  }
+  .rsdblog-breadcrumbs ul li:first-child a{color: var(--body-clr);}
+  .rsdblog-breadcrumbs ul li a:hover{color: var(--clr-primary);}
+  .rsdblog-breadcrumbs ul li:not(:first-child) a{margin-inline-start: 1rem;}
+  .rsdblog-breadcrumbs ul li:not(:first-child) a:before{
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: -1rem;
+    margin-block: auto;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url('data:image/svg+xml;utf8,<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-3.05981e-07 6.50003C-2.9239e-07 6.18911 0.111386 5.87818 0.350074 5.63271L5.9672 -0.14407C6.42866 -0.618644 7.19246 -0.618644 7.65393 -0.144069C8.11536 0.330505 8.11536 1.11601 7.65393 1.59058L2.88017 6.50003L7.65393 11.4094C8.11536 11.884 8.11536 12.6695 7.65393 13.1441C7.19246 13.6186 6.42866 13.6186 5.9672 13.1441L0.350074 7.36736C0.111386 7.12189 -3.19572e-07 6.81096 -3.05981e-07 6.50003Z" fill="rgba(35, 41, 63, 0.5)"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 0.5rem;
+    background-position: center;
+    pointer-events: none;
+  }
+
+  .breadcrumbs-toolbar .rsdblog-btn img{
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
   /* Main */
   main{
     padding: 3.5rem 0;

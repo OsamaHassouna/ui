@@ -37,7 +37,7 @@
 .bg-gray{background-color:var(--clr-gray,gray)}
 .bg-dark{background-color:var(--clr-dark,darkgray)}
 .bg-black{background-color:var(--clr-black,black)}
-
+.bg-transparent{background-color: transparent;}
 /* ==== === ==== === ==== === ==== */
 /*          GENERAL CLASSES        */
 /* ==== === ==== === ==== === ==== */

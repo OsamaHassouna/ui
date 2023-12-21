@@ -6,6 +6,8 @@
   --body-ff-ar: 'Montserrat-Arabic', sans-serif;
   --body-ff-en: 'Montserrat', sans-serif;
 
+  --body-clr-light-50: rgba(35, 41, 63, 0.5);
+
   --clr-primary: #3283D0;
   --clr-secondary: grey;
   --clr-third: lightblue;
