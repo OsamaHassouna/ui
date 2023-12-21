@@ -162,14 +162,14 @@
   line-height: 1.5rem;
 }
 .rsdblog-typography blockquote {
-  position: relative;
-  padding: 30px;
-  padding-right: 110px;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 20px;
+    position: relative;
+    padding: 0.5rem;
+    background-color: #f8f8f8;
+    border-radius: 0.75rem;
+    font-size: 0.8755rem;
+    font-weight: 500;
+    margin-bottom: 0.875rem;
+    display: inline-flex;
 }
 
 /* .rsdblog-typography blockquote::before {
