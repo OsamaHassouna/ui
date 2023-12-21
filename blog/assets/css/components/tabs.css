@@ -126,6 +126,100 @@
    */
  /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.tablist{
+  --tablist-tabs-justify:center;
+  --tablist-tabs-gap:0;
+  --tablist-tabs-padding-block:0;
+  --tablist-tabs-padding-inline:0;
+  --tablist-tabs-bg: transparent;
+  --tablist-tabs-border-width:0;
+  --tablist-tabs-border-style: solid;
+  --tablist-tabs-border-clr:transparent;
+  --tablist-tabs--border-radius:0;
+  --tablist-tabs-boxshadow:none;
+
+  --tablist-tablink-padding-block:0;
+  --tablist-tablink-padding-inline:0;
+  --tablist-tablink-border-width:0;
+  --tablist-tablink-border-style:0;
+  --tablist-tablink-border-clr:0;
+  --tablist-tablink-border-radius:0;
+  --tablist-tablink-bg:transparent;
+  --tablist-tablink-clr:var(--clr-primary);
+  --tablist-tablink-fs:0.875rem;
+  --tablist-tablink-f2:400;
+  --tablist-tablink-lh:1.5;
+
+  --tablist-tabcontent-margin:1.5rem 0 0;
+}
+.tablist .tablist-tabs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: var(--tablist-tabs-justify, center);
+  gap: var(--tablist-tabs-gap, 0);
+  padding-block: var(--tablist-tabs-padding-block, 0);
+  padding-inline: var(--tablist-tabs-padding-inline, 0);
+  background: var(--tablist-tabs-bg, transparent);
+  border: var(--tablist-tabs-border-width, 0px) var(--tablist-tabs-border-style, solid) var(--tablist-tabs-border-clr, transparent);
+  border-radius: var(--tablist-tabs-border-radius, 0);
+  box-shadow: var(--tablist-tabs-boxshadow, none)
+}
+.tablist .tablist-tabs .tab-link {
+  padding-block: var(--tablist-tablink-padding-block, 0);
+  padding-inline: var(--tablist-tablink-padding-inline, 0);
+  border-radius: var(--tablist-tablink-border-radius, 0);
+  background: var(--tablist-tablink-bg, transparent);
+  border: var(--tablist-tablink-border-width, 0px) var(--tablist-tablink-border-style, solid) var(--tablist-tablink-border-clr, transparent);
+  color: var(--tablist-tablink-clr, var(--clr-primary));
+  font-size: var(--tablist-tablink-fs, 0.875rem);
+  font-weight: var(--tablist-tablink-fw, 400);
+  line-height: var(--tablist-tablink-lh, 1.5);
+}
+.tablist .tablist-tabs .tab-link.active,
+.tablist .tablist-tabs .tab-link:hover{
+  --tablist-tablink-bg: var(--clr-primary);
+  --tablist-tablink-clr: var(--clr-white);
+}
+/* .tablist .tab-content{text-align: initial;} */
+
+/* Tablist || Line */
+/* .tablist.tablist-line .tablist-tabs {
+  box-shadow: none;
+  padding: 0;
+  gap: 1rem;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(34,35,51,0.12);
+}
+.tablist.tablist-line .tablist-tabs .nav-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 1rem;
+  position: relative;
+
+  text-align: right;
+  padding-inline: 0;
+  padding-inline-end: 10px;
+  padding-bottom: 25px;
+  min-width: auto;
+  color: var(--clr-secondary);
+}
+.tablist.tablist-line .tablist-tabs .nav-link.active,
+.tablist.tablist-line .tablist-tabs .nav-link:hover {color: var(--clr-primary); background: transparent;}
+
+.tablist.tablist-line .tablist-tabs .nav-link:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  inset-inline: 0;
+  bottom: -0.6rem;
+  background: transparent;
+
+  border-radius: 5px;
+}
+.tablist.tablist-line .tablist-tabs .nav-link.active:before,
+.tablist.tablist-line .tablist-tabs .nav-link:hover:before {background: var(--clr-primary);} */
 
 /* NEW */
 .tablist.rsdblog-tablist {text-align: center;}
@@ -156,5 +250,6 @@
 
 
 /* Tab Content */
+.tablist-content{margin: var(--tablist-tabcontent-margin);}
 .tablist-content > .tab-pane {display: none;}
 .tablist-content > .active {display: block;}
