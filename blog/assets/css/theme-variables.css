@@ -2,6 +2,11 @@
 /* =-=-=-=-= Buttons =-=-=-=-= */
 .rsdblog-btn{
   --btn-border-radius: 40vw;
+  --btn-margin-block: 0;
+}
+.btn-light-primary {
+  --btn-clr: var(--clr-primary);
+  --btn-bg: var(--clr-light-primary-20);
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

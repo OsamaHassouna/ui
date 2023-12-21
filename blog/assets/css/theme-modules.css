@@ -1,0 +1,79 @@
+/* =-=-=-=-= POSTS PAGE || CARD =-=-=-=-= */
+.post-card {
+    --card-padding: 1rem 1.25rem;
+    --card-border-radius: 1rem;
+    --card-bg: #F7F8FB;
+    --card-mb:1.5rem;
+}
+.post-img{
+    width: 100%;
+    object-fit: cover;
+    height: 17.25rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+.post-author{
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+.post-author .author,
+.post-author .time{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.post-author img{
+    width: 0.75rem;
+    height: 0.75rem;
+    object-fit: contain;
+}
+.post-author p{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #5A7890;
+}
+.post-title{
+    margin-bottom: 1.5rem;
+    text-align: start;
+    color: var(--body-clr);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+.post-description{
+    --trim-lines-nubmers:3;
+    text-align: start;
+    color: #5A7890;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    margin-bottom: 1.5rem;
+    min-height: 3.1875rem;
+}
+.post-actions{text-align: start;}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
+/* =-=-=-=-= SUBSCRIPTION CARD =-=-=-=-= */
+.subscription-card{
+    --card-padding:3.5rem;
+    /* --card-mb:1.5rem */
+}
+.subscription-content h4{
+    margin-bottom: 1.5rem;
+    color: var(--body-clr);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+}
+.subscription-content p{
+    margin-bottom: 1.5rem;
+    color: var(--body-clr);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.subscription-content .subscription-form{}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */

@@ -48,7 +48,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+.line-trim{
+  --trim-lines-nubmers:2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--trim-lines-nubmers);
+  line-clamp: var(--trim-lines-nubmers);
+  -webkit-box-orient: vertical;
+}
 .cursor-pointer{cursor: pointer;}
 .cursor-default{cursor: default;}
 

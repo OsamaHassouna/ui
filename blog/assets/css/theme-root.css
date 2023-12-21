@@ -18,15 +18,18 @@
   --clr-dark: darkgray;
   --clr-black: black;
 
-  --fs-xs-min: 1rem;
-  --fs-xs-max: 1rem;
-  --fs-sm-min: 1.5rem;
-  --fs-sm-max: 1.5rem;
-  --fs-md-min: 1.8rem;
-  --fs-md-max: 1.8rem;
-  --fs-lg-min: 1.9rem;
-  --fs-lg-max: 1.9rem;
-  --fs-xl-min: 2rem;
+  --clr-light-primary: #3192ED;
+  --clr-light-primary-20: rgba(49, 146, 237, 0.2);
+  
+  --fs-xs-min: 0.75rem;
+  --fs-xs-max: 0.75rem;
+  --fs-sm-min: 0.875rem;
+  --fs-sm-max: 0.875rem;
+  --fs-md-min: 1.125rem;
+  --fs-md-max: 1.125rem;
+  --fs-lg-min: 1.125rem;
+  --fs-lg-max: 1.5rem;
+  --fs-xl-min: 1.125rem;
   --fs-xl-max: 2rem;
   --fs-ratio: 7.5vw;
 }
