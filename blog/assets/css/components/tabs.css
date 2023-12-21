@@ -174,14 +174,13 @@
   font-size: var(--tablist-tablink-fs, 0.875rem);
   font-weight: var(--tablist-tablink-fw, 400);
   line-height: var(--tablist-tablink-lh, 1.5);
+  cursor: pointer;
 }
 .tablist .tablist-tabs .tab-link.active,
 .tablist .tablist-tabs .tab-link:hover{
   --tablist-tablink-bg: var(--clr-primary);
-  --tablist-tablink-clr: var(--clr-white);
+  --tablist-tablink-clr: white;
 }
-/* .tablist .tab-content{text-align: initial;} */
-
 /* Tablist || Line */
 /* .tablist.tablist-line .tablist-tabs {
   box-shadow: none;
@@ -221,33 +220,7 @@
 .tablist.tablist-line .tablist-tabs .nav-link.active:before,
 .tablist.tablist-line .tablist-tabs .nav-link:hover:before {background: var(--clr-primary);} */
 
-/* NEW */
-.tablist.rsdblog-tablist {text-align: center;}
-/* Tabs */
-.tablist-tabs {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    background: white;
-    border-radius: 40vw;
-}
-.tablist-tabs .tab-link {
-    border: 0;
-    background: 0;
-    padding: 0.875rem 1.5rem;
-    border-radius: 40vw;
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: var(--body-clr);
-    line-height: 1.0625rem;
-    cursor: pointer;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-.tablist-tabs .tab-link.active,
-.tablist-tabs .tab-link:hover {background: var(--clr-primary); color: white;}
 @media (prefers-reduced-motion: reduce) {.tab-link {transition: none;}}
-
 
 /* Tab Content */
 .tablist-content{margin: var(--tablist-tabcontent-margin);}
