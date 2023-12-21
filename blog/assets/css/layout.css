@@ -40,19 +40,69 @@
     margin-bottom: 2.75rem;
   }
 
+  /* Main */
+  main{
+    padding: 3.5rem 0;
+  }
+
   /* Footer */
-  .rsdblog-footer {border-top: 1px solid #CBD9EA; padding: 40px 0 30px;}
-  .footer-content {margin-bottom: 40px;}
-  .footer-about {text-align: center;}
-  .footer-about > img {margin-inline: auto; margin-bottom: 1rem; width: 10rem;}
-  .footer-about > p {font-size: 0.875rem; line-height: 1.5rem; color: #5A7890; max-width: 88%; margin-inline: auto;}
-  
-  h4.footer-title {font-size: 1.125rem; font-weight: 500; line-height: 1.375rem; margin-bottom: 1.375rem;}
-
-  .footer-links ul li a {color: #5A7890; font-size: 0.875rem; font-weight: 500; text-decoration-line: underline; display: inline-block;}
-  .footer-links ul li:not(:last-child) a {margin-bottom: 1.375rem;}
-
-  .footer-copyrights {text-align: center; color: #5A7890; font-size: 1rem; font-weight: 500;}
-  .footer-copyrights a {color: #5A7890;}
-  .footer-copyrights a:hover {text-decoration: underline;}
+  .rsdblog-footer {
+    border-top: 1px solid #CBD9EA;
+    padding: 40px 0 30px;
+  }
+  .footer-content {
+    margin-bottom: 40px;
+  }
+  .footer-about {
+    text-align: center;
+  }
+  .footer-about > img {
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    width: 10rem;
+  }
+  .footer-about > p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #5A7890;
+    max-width: 88%;
+    margin-inline: auto;
+  }
+  .footer-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    margin-bottom: 1.375rem;
+  }
+  .footer-links ul li a {
+    color: #5A7890;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+    display: inline-block;
+  }
+  .footer-links ul li:not(:last-child) a {
+    margin-bottom: 1.375rem;
+  }
+  .footer-social,
+  .footer-social li,
+  .footer-social li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #5A7890;
+  }
+  .footer-copyrights {
+    text-align: center;
+    color: #5A7890;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .footer-copyrights a {
+    color: #5A7890;
+  }
+  .footer-copyrights a:hover {
+    text-decoration: underline;
+  }
 }
