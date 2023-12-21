@@ -1,6 +1,7 @@
-@layer components.buttons, components.tabs, components.forms; 
+@layer components.buttons, components.cards, components.tabs, components.forms; 
 
 @import url('./components/buttons.css') layer(components.buttons);
+@import url('./components/cards.css') layer(components.cards);
 @import url('./components/tabs.css') layer(components.tabs);
 @import url('./components/forms.css') layer(components.forms);
 

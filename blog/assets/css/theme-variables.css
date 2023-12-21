@@ -1,59 +1,34 @@
 /* prefix = rsdblog */
 /* =-=-=-=-= Buttons =-=-=-=-= */
 .rsdblog-btn{
-  /* --btn-padding-block: 5px; */
-  /* --btn-padding-inline: 20px; */
-  /* --btn-margin-block: 5px; */
-  /* --btn-margin-inline: 0px; */
-  /* --btn-align: center; */
-  /* --btn-justify-content: center; */
-  /* --btn-gap: 0.5rem; */
-  /* --btn-width: auto; */
-  /* --btn-minwidth: auto; */
-  /* --btn-height: auto; */
-  /* --btn-minheight: 44px; */
-  /* --btn-fs: 0.875rem; */
-  /* --btn-fw: 500; */
-  /* --btn-lineheight: 1.5; */
-  /* --btn-text-decoration: none; */
-  /* --btn-clr: white; */
-  /* --btn-bg: var(--clr-primary); */
   --btn-border-radius: 40vw;
-  /* --btn-border-width: 1px; */
-  /* --btn-border-style: solid; */
-  /* --btn-border-clr: transparent; */
-  /* --btn-opacity: 1; */
-  /* --btn-boxshadow: none; */
-  /* --btn-outline: 0; */
-  /* --btn-disabled-clr: var(--clr-gray); */
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-= CARD =-=-=-=-= */
+.rsdblog-card{
+  --card-mb: 2.5rem;
+  --card-border-radius: 1.25rem;
+  --card-header-padding: 0 0 1.5rem 0;
+  --card-header-borderbottom-width: 0px;
+  --card-header-title-clr: var(--body-clr);
+  --card-header-title-fw: 500;
+  --card-header-title-linheight: 1.5rem;
+  /* --card-body-padding-block: 0; */
+  /* --card-body-padding-inline: 0; */
+  --card-footer-bordertop-width: 0;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-= TABLIST =-=-=-=-= */
 .rsdblog-tablist{
   text-align: center;
-  /* --tablist-tabs-justify:center; */
-  /* --tablist-tabs-gap:0; */
   --tablist-tabs-padding-block:0.5rem;
   --tablist-tabs-padding-inline:0.5rem;
   --tablist-tabs-bg: white;
-  /* --tablist-tabs-border-width:0; */
-  /* --tablist-tabs-border-style: solid; */
-  /* --tablist-tabs-border-clr:transparent; */
   --tablist-tabs-border-radius:40vw;
-  /* --tablist-tabs-boxshadow:none; */
-
   --tablist-tablink-padding-block:0.875rem;
   --tablist-tablink-padding-inline:1.5rem;
-  /* --tablist-tablink-border-width:0; */
-  /* --tablist-tablink-border-style:0; */
-  /* --tablist-tablink-border-clr:0; */
   --tablist-tablink-border-radius:40vw;
-  /* --tablist-tablink-bg:transparent; */
   --tablist-tablink-clr:var(--body-clr);
-  /* --tablist-tablink-fs:0.875rem; */
-  /* --tablist-tablink-f2:400; */
-  /* --tablist-tablink-lh:1.0625rem; */
-
-  /* --tablist-tabcontent-margin: 1.5rem 0 0; */
 }
