@@ -5,7 +5,7 @@
 @layer layout{
   /* Header */
   .rsdblog-header{
-    background-image: url(../media/header-bg-fixed.png);
+    background-image: url(../media/header-bg-fixed.webp);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1.75rem 0;
