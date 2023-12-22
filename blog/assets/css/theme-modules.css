@@ -75,7 +75,7 @@
     font-weight: 500;
     line-height: 1.5rem;
 }
-.subscription-content .subscription-form{}
+/* .subscription-content .subscription-form{} */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
 /* =-=-=-=-= TYPOGRAPY =-=-=-=-= */
 .rsdblog-typography h1 {
@@ -163,24 +163,28 @@
 }
 .rsdblog-typography blockquote {
     position: relative;
-    padding: 0.5rem;
-    background-color: #f8f8f8;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    background-color: #F7F8FB;
     border-radius: 0.75rem;
     font-size: 0.8755rem;
     font-weight: 500;
     margin-bottom: 0.875rem;
-    display: inline-flex;
 }
-
-/* .rsdblog-typography blockquote::before {
-  content: '';
+.rsdblog-typography blockquote::before,
+.rsdblog-typography blockquote::after {
+  content: '"';
   position: absolute;
-  width: 61px;
-  height: 50px;
-  background-image: url('../img/svg/left-quote-gray.svg');
-  right: 30px;
-  top: 30px;
-} */
+  width: 5px;
+  height: 10px;
+  top: 5px;
+}
+.rsdblog-typography blockquote::before {
+    inset-inline-start: 10px;
+}
+.rsdblog-typography blockquote::after {
+    inset-inline-end: 10px;
+}
 
 .rsdblog-typography a:not(.btn) {
   font-size: 0.87rem;
@@ -199,5 +203,57 @@
   margin-bottom: 1.5rem;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
-/* =-=-=-=-= TYPOGRAPY =-=-=-=-= */
+/* =-=-=-=-= AUTHOR CARD =-=-=-=-= */
+.author-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #F7F8FB;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+}
+.author-details .author-img img {
+    width: 4.0625rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.author-details .author-info .author-name {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.0625rem;
+    color: var(--body-clr);
+    margin-bottom: 0.5rem;
+}
+.author-details .author-info .author-description {
+    color: #5A7890;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    margin-bottom: 1.5rem;
+}
+.author-info .author-social {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: #5A7890;
+}
+.author-info .author-social li a{
+    color: #5A7890;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
+/* =-=-=-=-= Banner CARD =-=-=-=-= */
+.banner-content h3 {
+    font-size: 1.125rem;
+    color: var(--body-clr);
+    margin-bottom: 2.25rem;
+    line-height: 1.375rem;
+}
+.banner-content p {
+    font-size: 2.25rem;
+    color: var(--body-clr);
+    margin-bottom: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
