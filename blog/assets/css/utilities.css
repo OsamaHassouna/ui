@@ -66,6 +66,8 @@
 
 .text-underline{text-decoration: underline;}
 
+.separator{height: 1px; background: var(--separator-bg);}
+
 /* .max-w-95{max-width: 95%;} */
 
 /* DISPLAY CLASSES */

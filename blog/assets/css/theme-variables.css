@@ -9,7 +9,6 @@
   --btn-bg: var(--clr-light-primary-20);
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-= CARD =-=-=-=-= */
 .rsdblog-card{
   --card-mb: 2.5rem;
@@ -24,7 +23,6 @@
   --card-footer-bordertop-width: 0;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-= TABLIST =-=-=-=-= */
 .rsdblog-tablist{
   text-align: center;
@@ -37,3 +35,29 @@
   --tablist-tablink-border-radius:40vw;
   --tablist-tablink-clr:var(--body-clr);
 }
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-= FORMS || Label =-=-=-=-= */
+label:not(.radio, .checkbox, .switch){
+  --form-label-fs: 1rem;
+  --form-label-fw: 400;
+  --form-label-clr: black;
+  --form-label-mb: 0.5rem;
+}
+.rsdblog-form-control {
+  --formcontrol-minheight: 3.5rem;
+  --formcontrol-padding-block: 0.625rem;
+  --formcontrol-padding-inline: 1.5rem 0.625rem;
+  --formcontrol-border-clr: #DBE1F3;
+  --formcontrol-border-radius: 0.75rem;
+  --formcontrol-clr: var(--body-clr);
+  --formcontrol-fs: 0.75rem;
+  --formcontrol-fw: 500;
+  --formcontrol-lineheight: 1.25;
+  /* placeholder */ 
+  --formcontrol-placeholder-fs: 0.75rem;
+  --formcontrol-placeholder-fw: 500;
+  --formcontrol-placeholder-clr: var(--body-clr-light-30);
+  /* disabled */
+  --formcontrol-disabled-bg: var(--body-clr-light-30);
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

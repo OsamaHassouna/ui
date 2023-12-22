@@ -57,10 +57,9 @@
 .post-actions{text-align: start;}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
 /* =-=-=-=-= SUBSCRIPTION CARD =-=-=-=-= */
-.subscription-card{
+/* .subscription-card{
     --card-padding:3.5rem;
-    /* --card-mb:1.5rem */
-}
+} */
 .subscription-content h4{
     margin-bottom: 1.5rem;
     color: var(--body-clr);
@@ -75,7 +74,12 @@
     font-weight: 500;
     line-height: 1.5rem;
 }
-/* .subscription-content .subscription-form{} */
+@media screen and (max-width:767.98px){
+  .subscription-card .col-md-9 {order: 2;}
+  .subscription-card .col-md-3 {orphans: 1;}
+  .subscription-card .subscription-img {margin-bottom: 2rem;max-width: max(75%, 20rem); margin-inline:auto}
+  .subscription-card .subscription-form{margin-bottom:0;}
+}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
 /* =-=-=-=-= TYPOGRAPY =-=-=-=-= */
 .rsdblog-typography h1 {
@@ -242,7 +246,7 @@
     color: #5A7890;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
-/* =-=-=-=-= Banner CARD =-=-=-=-= */
+/* =-=-=-=-= BANNER CARD =-=-=-=-= */
 .banner-content h3 {
     font-size: 1.125rem;
     color: var(--body-clr);
@@ -257,3 +261,71 @@
     font-weight: 700;
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
+/* =-=-=-=-= BOOK CARD =-=-=-=-= */
+.book-card .book-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    color: var(--body-clr);
+    margin-bottom: 1rem;
+}
+.book-card .rsdblog-typography {
+    color: #5A7890;
+}
+.book-card .rsdblog-typography > * {
+    margin-bottom: 1rem;
+    line-height: 1.125rem;
+}
+.book-card .book-author {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #5A7890;
+}
+.book-subscription h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--body-clr);
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+}
+.book-subscription p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #5A7890;
+    margin-bottom: 1rem;
+}
+.book-subscription-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+.book-subscription-form > * {flex: 1;}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
+/* =-=-=-=-= SUBSCRIPTION FOR || FOOTER || SECTION =-=-=-=-= */
+.subscription-form {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.subscription-form .rsdblog-btn {
+    position: absolute;
+    inset-inline-end: 0.625rem;
+    inset-block: 0;
+    --btn-margin-block: auto;
+    --btn-height: 2.8125rem;
+}
+.subscription-form .rsdblog-form-control {
+    width: 100%;
+    --formcontrol-border-radius: 40vw;
+    --formcontrol-minheight: 4.0625rem;
+    --formcontrol-padding-inline: 1.5rem 7.25rem;
+}
+.rsdblog-footer .subscription-form .rsdblog-form-control {--formcontrol-border-clr: transparent;}
+@media screen and (min-width:992px){
+    .subscription-card .subscription-form {
+        max-width: 65%;
+    }
+}

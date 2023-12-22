@@ -132,6 +132,7 @@
   .footer-links ul li:not(:last-child) a {
     margin-bottom: 1.375rem;
   }
+  .footer-social{padding:0.5rem}
   .footer-social,
   .footer-social li,
   .footer-social li a{

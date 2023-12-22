@@ -7,6 +7,7 @@
   --body-ff-en: 'Montserrat', sans-serif;
 
   --body-clr-light-50: rgba(35, 41, 63, 0.5);
+  --body-clr-light-30: rgba(35, 41, 63, 0.3);
 
   --clr-primary: #3283D0;
   --clr-secondary: grey;
@@ -22,6 +23,8 @@
 
   --clr-light-primary: #3192ED;
   --clr-light-primary-20: rgba(49, 146, 237, 0.2);
+
+  --separator-bg: #CBD9EA;
   
   --fs-xs-min: 0.75rem;
   --fs-xs-max: 0.75rem;
