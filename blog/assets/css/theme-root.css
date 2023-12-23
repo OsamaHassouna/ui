@@ -22,6 +22,7 @@
   --clr-black: black;
 
   --clr-light-primary: #3192ED;
+  --clr-light-primary-10: rgba(49, 146, 237, 0.1);
   --clr-light-primary-20: rgba(49, 146, 237, 0.2);
 
   --separator-bg: #CBD9EA;

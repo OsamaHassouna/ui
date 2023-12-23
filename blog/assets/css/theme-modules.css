@@ -262,6 +262,17 @@
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
 /* =-=-=-=-= BOOK CARD =-=-=-=-= */
+.book-card .book-img{
+  padding: 0.5rem;
+  border-radius: 1.125rem;
+  background: linear-gradient(264deg, rgba(255, 255, 255, 0.60) 0%, rgba(192, 200, 218, 0.60) 100%);
+}
+.book-card .book-img img{
+  border-radius: 0.75rem;
+  max-height: 24rem;
+  object-fit: cover;
+  object-position: top;
+}
 .book-card .book-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -304,6 +315,21 @@
     margin-bottom: 1rem;
 }
 .book-subscription-form > * {flex: 1;}
+
+.book-download h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.book-download ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.book-download ul .rsdblog-btn {
+  border-radius: 0.5rem;
+}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
 /* =-=-=-=-= SUBSCRIPTION FOR || FOOTER || SECTION =-=-=-=-= */
 .subscription-form {

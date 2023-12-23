@@ -8,6 +8,10 @@
   --btn-clr: var(--clr-primary);
   --btn-bg: var(--clr-light-primary-20);
 }
+.btn-light-primary-10 {
+  --btn-clr: var(--clr-primary);
+  --btn-bg: var(--clr-light-primary-10);
+}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-= CARD =-=-=-=-= */
 .rsdblog-card{
