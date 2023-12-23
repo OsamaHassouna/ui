@@ -406,6 +406,7 @@
     --formcontrol-padding-inline: 1.5rem 7.25rem;
 }
 .rsdblog-footer .subscription-form .rsdblog-form-control {--formcontrol-border-clr: transparent;}
+.rsdblog-footer .subscription-form .rsdblog-form-control:focus {--formcontrol-border-clr: var(--clr-primary);}
 @media screen and (min-width:992px){
     .subscription-card .subscription-form {
       margin-bottom: 0;
