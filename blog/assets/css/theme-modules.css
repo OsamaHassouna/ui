@@ -1,58 +1,111 @@
 /* =-=-=-=-= POSTS PAGE || CARD =-=-=-=-= */
 .post-card {
-    --card-padding: 1rem 1.25rem;
-    --card-border-radius: 1rem;
-    --card-bg: #F7F8FB;
-    --card-mb:1.5rem;
+  --card-padding: 1rem 1.25rem;
+  --card-border-radius: 1rem;
+  --card-bg: #F7F8FB;
+  --card-mb:1.5rem;
 }
 .post-img{
-    width: 100%;
-    object-fit: cover;
-    height: 17.25rem;
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #1A202C;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.post-img:before {
+  content: '';
+  position: absolute;
+  background-image: url('../media/feathers.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  inset-inline-start: 0;
+  top: 0;
+  z-index: -1;
+  width: 171px;
+  aspect-ratio: 93/67;
+  background-size: 171px;
+}
+.post-img .img img {
+  max-width: 385px;
+}
+.post-card .post-img .img img {
+  max-width: 260px;
+}
+@media screen and (max-width:500.98px) {
+  .post-card .post-img{flex-wrap: wrap;}
+}
+.post-img .img-logo {
+  margin-bottom: 60px;
+}
+.post-img h3,
+.post-img p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+.post-img p {
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+.post-img p:before {
+  content: '';
+  width: 91px;
+  height: 13px;
+  background: #2F396D;
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: -1;
+  margin-inline: auto;
 }
 .post-author{
-    display: flex;
-    align-items: center;
-    gap: 0.875rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 .post-author .author,
 .post-author .time{
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .post-author img{
-    width: 0.75rem;
-    height: 0.75rem;
-    object-fit: contain;
+  width: 0.75rem;
+  height: 0.75rem;
+  object-fit: contain;
 }
 .post-author p{
-    font-size: 0.75rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    color: #5A7890;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #5A7890;
 }
 .post-title{
-    margin-bottom: 1.5rem;
-    text-align: start;
-    color: var(--body-clr);
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: start;
+  color: var(--body-clr);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
 }
 .post-description{
-    --trim-lines-nubmers:3;
-    text-align: start;
-    color: #5A7890;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.0625rem;
-    margin-bottom: 1.5rem;
-    min-height: 3.1875rem;
+  --trim-lines-nubmers:3;
+  text-align: start;
+  color: #5A7890;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0625rem;
+  margin-bottom: 1.5rem;
+  min-height: 3.1875rem;
 }
 .post-actions{text-align: start;}
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-= */
