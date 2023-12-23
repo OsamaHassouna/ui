@@ -319,6 +319,9 @@
 .book-download h3 {
   text-align: center;
   margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--body-clr);
 }
 .book-download ul {
   display: flex;
