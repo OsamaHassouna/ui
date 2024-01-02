@@ -1,0 +1,32 @@
+body{background-color: black;}
+section{
+    padding: 30px;
+    text-align: center;
+}
+section p{max-width: 50%; margin-inline: auto;}
+
+
+.scroll-reveal span{
+    color: hsl(0 0% 100% / 0.2);
+    background-image: linear-gradient(90deg, white, white);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-clip: text;
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+}
+
+.scroll-reveal h2 span{
+    animation-range-start: 20vh;
+    animation-range-end: 30vh;
+}
+.scroll-reveal p span{
+    animation-range-start: 22vh;
+    animation-range-end: 50vh;
+}
+
+@keyframes scroll-reveal{
+    to{
+        background-size: 100% 100%;
+    }
+}
