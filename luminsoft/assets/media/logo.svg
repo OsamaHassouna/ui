@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107" height="44" viewBox="0 0 107 44">
+  <g id="logo" transform="translate(-280 -26)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15" transform="translate(280 35)" fill="#00b2e2"/>
+    <text id="Logo-2" data-name="Logo" transform="translate(316 62)" fill="#fff" font-size="33" font-family="Cabin-Bold, Cabin" font-weight="700"><tspan x="0" y="0">Logo</tspan></text>
+    <text id="L" transform="translate(285 58)" fill="#fff" font-size="33" font-family="Cabin-Bold, Cabin" font-weight="700"><tspan x="0" y="0">L</tspan></text>
+  </g>
+</svg>
