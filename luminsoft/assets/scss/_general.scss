@@ -1,0 +1,178 @@
+// @use "./variables" as *;
+@use 'sass:meta';
+// @include meta.load-css('../vendors/googlecode.min.css');
+
+/* === ROOT || DEFAULT === */
+:root {
+    --body-clr: initial;
+    --body-bg: #F0F3FA;
+    --body-fs: initial;
+    --body-fw: initial;
+    --body-ff-ar: ui-system, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+    --body-ff-en: ui-system, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+    //   @each $key, $value in $newColors{
+    //     --clr-#{"" + $key}: #{$value};
+    //   }
+    //   @each $key, $value in $fontSizes{
+    //     --fs-#{$key}: #{$value}; 
+    //   }
+}
+
+/* === BODY === */
+body {
+    color: var(--body-clr, #333);
+    font-size: var(--body-fs, 1rem);
+    font-weight: var(--body-fw, 400);
+    background: var(--body-bg, #EDECF2);
+
+    html[dir="rtl"] & {font-family: var(--body-ff-ar, 'Tajawal');}
+
+    html[dir="ltr"] & {font-family: var(--body-ff-en, 'Cabin');}
+}
+
+.svg-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        min-width: 10px;
+    }
+}
+
+/* ==== === ==== === ==== === ==== */
+/* =-=-=-=-= Grid Class =-=-=-=-= */
+// .container-grid {
+//     --padding-inline: 1rem;
+//     --content-max-width: 900px;
+//     --breakout-max-width: 1200px;
+//     --content-padding: min(100% - (var(--padding-inline) * 2), calc(var(--content-max-width)/2));
+//     --breakout-width: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+
+//     display: grid;
+//     grid-template-columns:
+//         [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-width)) [content-start] var(--content-padding) [split-middle] var(--content-padding) [content-end] minmax(0, var(--breakout-width)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+
+//     > :not(.breakout, .full-width) {
+//         grid-column: content;
+//     }
+
+//     .grid-split {
+//         grid-template-columns: inherit;
+//     }
+
+//     &.grid-split,
+//     .grid-split {
+//         --split-first-block-startpoint: content-start;
+//         --split-first-block-endpoint: split-middle;
+//         --split-last-block-startpoint: split-middle;
+//         --split-last-block-endpoint: content-end;
+
+//         >* {
+//             display: grid;
+//             align-content: center;
+//             justify-items: start;
+//             height: 100%;
+//         }
+
+//         > :first-child {
+//             grid-column-start: var(--split-first-block-startpoint);
+//             grid-column-end: var(--split-first-block-endpoint);
+
+//             &.breakout {
+//                 --split-first-block-startpoint: breakout-start;
+//             }
+//         }
+
+//         > :last-child {
+//             grid-column-start: var(--split-last-block-startpoint);
+//             grid-column-end: var(--split-last-block-endpoint);
+
+//             &.breakout {
+//                 --split-last-block-endpoint: breakout-end;
+//             }
+//         }
+//     }
+// }
+
+/* === === General Styling === === */
+// .text-trim {
+//     --txtsplit-maxwidth: 21ch;
+//     max-width: var(--txtsplit-maxwidth, 21ch);
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+// }
+
+// .line-trim {
+//     --trim-lines-nubmers: 2;
+//     overflow: hidden;
+//     display: -webkit-box;
+//     -webkit-line-clamp: var(--trim-lines-nubmers, 2);
+//     line-clamp: var(--trim-lines-nubmers, 2);
+//     -webkit-box-orient: vertical;
+// }
+
+// .separator {
+//     --separator-height: 1px;
+//     --separator-bg: gray;
+//     height: var(--separator-height, 1px);
+//     background: var(--separator-bg, gray);
+// }
+
+/* ==== === ==== === ==== === ==== */
+/* === Scroll === */
+// .scroll {
+//     padding-inline-end: var(--scroll-padding-istart);
+//     max-height: var(--scroll-min-height);
+//     object-fit: contain;
+//     overflow: hidden;
+//     overflow-y: auto;
+
+//     & {
+//         --scroll-min-height: 100px;
+//         --scroll-padding-istart: 10px;
+//         --scroll-bg: #E5EEF9;
+//         --scroll-clr: #1769CC;
+//         --scroll-width: 6px;
+//         --scroll-border-width: 0px;
+//         --scroll-border-style: solid;
+//         --scroll-border-clr: #1769CC;
+//         --scroll-track-border-radius: 8px;
+//         --scroll-thumb-border-radius: 8px;
+//     }
+// }
+
+// .scroll {
+//     scrollbar-width: auto;
+//     scrollbar-color: var(--scroll-clr);
+// }
+
+// .scroll::-webkit-scrollbar {
+//     width: var(--scroll-width);
+// }
+
+// .scroll::-webkit-scrollbar-track {
+//     background: var(--scroll-bg);
+//     border-radius: var(--scroll-border-radius);
+// }
+
+// .scroll::-webkit-scrollbar-thumb {
+//     background-clip: content-box;
+//     background-color: var(--scroll-clr);
+//     border: var(--scroll-border-width) var(--scroll-border-style) var(--scroll-border-clr);
+//     border-radius: var(--scroll-thumb-border-radius);
+// }
+
+/* custom scrollbar for firefox */
+// @-moz-document url-prefix() {
+
+//     *,
+//     html,
+//     body {
+//         /* "auto" or "thin"  */
+//         scrollbar-width: thin;
+//         /* scroll thumb & track */
+//         scrollbar-color: #909090 #505152;
+//     }
+// }

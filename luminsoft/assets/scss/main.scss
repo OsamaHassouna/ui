@@ -1,0 +1,18 @@
+@use 'sass:meta';
+@layer reset, general, components, themes, utilities;
+
+@layer reset {
+  @include meta.load-css('./reset');
+}
+@layer general {
+  @include meta.load-css('./general');
+}
+@layer components {
+  @include meta.load-css('./components/components');
+}
+@layer themes {
+  @include meta.load-css('./theme/main');
+}
+@layer utilities {
+  @include meta.load-css('./utilities');
+}

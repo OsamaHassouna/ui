@@ -1,0 +1,21 @@
+@use 'sass:meta';
+@layer fonts, components, layout, modules, variables, general;
+
+@layer fonts {
+    @include meta.load-css('./fonts');
+}
+
+@layer components {
+    @include meta.load-css('./components');
+}
+
+@layer layout {
+    @include meta.load-css('./layout');
+}
+@layer modules {
+    @include meta.load-css('./modules');
+}
+
+@layer variables {
+    @include meta.load-css('./variables');
+}

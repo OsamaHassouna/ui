@@ -1,0 +1,58 @@
+@use "../theme/prefix" as *;
+
+/* =-=-=-=-= Buttons =-=-=-=-= */
+.#{$prefix}-btn {
+    --btn-py: 14px;
+    --btn-px: 28px;
+    --btn-my: 0px;
+    --btn-mx: 0px;
+    --btn-align: center;
+    --btn-justify-content: center;
+    --btn-gap: 5px;
+    --btn-width: auto;
+    --btn-minwidth: auto;
+    --btn-height: auto;
+    --btn-minheight: 55px;
+    --btn-fs: 20px;
+    --btn-fw: 500;
+    --btn-lineheight: 24px;
+    --btn-text-decoration: none;
+    --btn-clr: white;
+    --btn-bg: var(--clr-primary);
+    --btn-border-radius: 40vw;
+    --btn-border-width: 1px;
+    --btn-border-style: solid;
+    --btn-border-clr: transparent;
+    --btn-opacity: 1;
+    --btn-boxshadow: none;
+    --btn-outline: 0;
+    --btn-hover-opacity: 0.7;
+    --btn-disabled-clr: var(--clr-gray);
+    --btn-icon-px: 5px;
+
+    /* =-= sm =-= */
+    --btn-px-sm: 26px;
+    --btn-py-sm: 8px;
+    --btn-minheight-sm: 40px;
+    --btn-fs-sm: 18px;
+    --btn-border-radius-sm: 40vw;
+    --btn-lineheight-sm: 20px;
+
+    /*===== Colors =====*/
+    &.btn-primary {
+        --btn-clr: var(--clr-white);
+        --btn-bg: var(--clr-primary);
+        --btn-border-clr: var(--clr-primary);
+    }
+    &.btn-white {
+        --btn-clr: var(--clr-secondary);
+        --btn-bg: white;
+    }
+     /* =-=-= Outline =-=-= */
+     &.btn-outline {
+        --btn-bg: transparent;
+        --btn-clr: var(--btn-border-clr)
+    }
+    &.btn-sm{ --btn-border-width: 2px;}
+   
+}

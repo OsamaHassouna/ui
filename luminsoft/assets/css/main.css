@@ -1,0 +1,78 @@
+@layer reset, general, components, themes, utilities;
+
+@layer reset {
+    @import url('../vendors/bootstrap-grid.min.css');
+    @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+    /* Reset Style */
+    *, *::before, *::after{box-sizing: border-box;}
+    *{margin: 0; padding: 0;}
+    *:not([type='password']){font: inherit}
+    html{color-scheme: dark light;}
+    img, picture, video{display: block; max-width: 100%;}
+    ul{list-style: none; padding: 0; margin: 0;}
+    a {text-decoration: none; transition: 0.2s all ease-in-out;cursor: pointer; color: inherit;}
+    a:-webkit-any-link:focus-visible{outline: 0px;}
+    h1, h2, h3, h4, h5, h6, p{margin: 0}
+    input:not([type='password']), textarea, button, select{font: inherit}
+    /*=== ===*/
+}
+@layer general {
+    /* === ROOT || DEFAULT === */
+    :root {
+        --body-clr: initial;
+        --body-bg: #F0F3FA;
+        --body-fs: initial;
+        --body-fw: initial;
+        /* --body-ff-ar: ui-system, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; */
+        /* --body-ff-en: ui-system, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; */
+        /* --body-ff-ar: "Tajawal", serif; */
+        /* --body-ff-en: "Cabin", serif; */
+    }
+    /* === BODY === */
+    body {
+        color: var(--body-clr, #333);
+        font-size: var(--body-fs, 1rem);
+        font-weight: var(--body-fw, 400);
+        background: var(--body-bg, #EDECF2);
+    }
+    html[dir="rtl"] body {font-family: var(--body-ff-ar, 'Tajawal');}
+    html[dir="ltr"] body {font-family: var(--body-ff-en, 'Cabin');}
+
+    .svg-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .svg-icon svg {min-width: 10px;}
+    
+}
+@layer components {
+ 
+}
+@layer themes {
+    @layer fonts, components, layout, modules, variables, general;
+
+    @layer fonts {
+      :root{
+        --body-ff-ar: "Tajawal", serif;
+        --body-ff-en: "Cabin", serif;
+      }
+    }
+    
+    @layer components {
+       
+    }
+    
+    @layer layout {
+        
+    }
+    @layer variables {
+        
+    }
+    @layer general {
+        
+    }
+}
+@layer utilities {
+  
+}
