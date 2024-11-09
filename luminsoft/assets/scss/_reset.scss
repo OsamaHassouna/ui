@@ -1,6 +1,7 @@
 @use 'sass:meta';
 // @include meta.load-css('../vendors/bootstrap.min.css');
 @include meta.load-css('../vendors/bootstrap-grid.min.css');
+@include meta.load-css('../vendors/bootstrap-carousel.css');
 /* Reset Style */
 *, *::before, *::after{box-sizing: border-box;}
 *{margin: 0; padding: 0;}
