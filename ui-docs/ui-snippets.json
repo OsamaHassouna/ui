@@ -1,0 +1,6 @@
+{
+  "buttonBase": "<button class='sbtn'>Default Button</button>",
+  "buttonPrimary": "<button class='sbtn sbtn-primary'>Click me</button>",
+  "buttonSecondary": "<button class='sbtn sbtn-secondary'>Cancel</button>",
+  "inputField": "<input class='form-input' placeholder='Enter text'>"
+}
