@@ -1,6 +1,23 @@
 {
-  "buttonBase": "<button class='sbtn'>Default Button</button>",
-  "buttonPrimary": "<button class='sbtn sbtn-primary'>Click me</button>",
-  "buttonSecondary": "<button class='sbtn sbtn-secondary'>Cancel</button>",
-  "inputField": "<input class='form-input' placeholder='Enter text'>"
+  "buttons": {
+    "title": "Buttons",
+    "description": "Here you can find the base buttons component. The .sbtn class is the core button component of the system. It uses CSS custom properties (variables) to allow complete theming and customization. All variants and sizes extend from it. Each modifier class updates the default button through scoped CSS variables — making this system themeable without touching the core styles.",
+    "variants": [
+      {
+        "title": "Base Class: sbtn",
+        "description": "default button",
+        "code": "<button class='sbtn'>Base Button</button>"
+      },
+      {
+        "title": "Primary Button",
+        "description": "uses .sbtn.sbtn-primary for solid theme color",
+        "code": "<button class='sbtn sbtn-primary'>Primary</button>"
+      },
+      {
+        "title": "Outline Button",
+        "description": "uses .sbtn.sbtn-outline",
+        "code": "<button class='sbtn sbtn-outline'>Outline</button>"
+      }
+    ]
+  }
 }
