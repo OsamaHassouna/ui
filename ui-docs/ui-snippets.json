@@ -50,7 +50,7 @@
         ]
       },
       {
-        "title": "Custom Classes",
+        "title": "Custom Classes ( Variables )",
         "description": "Customize buttons by adding your own classes and overriding CSS variables. This lets you create new button styles that match your theme without touching the core button structure.",
         "showPreview": false,
         "showCopy": false,
