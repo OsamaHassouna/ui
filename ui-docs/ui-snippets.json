@@ -6,11 +6,15 @@
       {
         "title": "Base Button",
         "description": "This is the basic class of button component which holds all the properties (variables) for the future customization and Theming.",
+        "showPreview": true,
+        "showCopy": true,
         "code": "<button class='sbtn'>default Button</button>"
       },
       {
         "title": "Color Variants",
         "description": "These use --clr-* theme variables which you should define in your root theme oroverride in custom themes.",
+        "showPreview": true,
+        "showCopy": true,
         "code": [
           "<button class='sbtn sbtn-primary'>Primary</button>",
           "<button class='sbtn sbtn-primary'>Primary Button</button>",
@@ -25,6 +29,8 @@
       {
         "title": "Style Variants",
         "description": "Buttons support multiple styles: Outline, Link, and Icon-only. You can mix styles — for example, use .sbtn-outline or .sbtn-link with icon buttons for minimal UI.",
+        "showPreview": true,
+        "showCopy": true,
         "code": [
           "<button class='sbtn sbtn-outline sbtn-primary'>Primary Outline Button</button>",
           "<button class='sbtn sbtn-link sbtn-primary'>Primary Link Button</button>",
@@ -36,6 +42,8 @@
       {
         "title": "Size Variants",
         "description": "Use size variants to control button dimensions. Options include: Small, Default, Large, and Extra Large — each adjusts padding, font size, and height to suit different UI contexts.",
+        "showPreview": true,
+        "showCopy": true,
         "code": [
           "<button class='sbtn sbtn-sm sbtn-primary'>Small Button</button>",
           "<button class='sbtn sbtn-lg sbtn-primary'>Large Button</button>",
@@ -45,6 +53,8 @@
       {
         "title": "Custom Classes",
         "description": "Customize buttons by adding your own classes and overriding CSS variables. This lets you create new button styles that match your theme without touching the core button structure.",
+        "showPreview": false,
+        "showCopy": false,
         "code": " --sbtn-transition: 0.2s; --sbtn-justify-content: center; --sbtn-txtalign: center; --sbtn-width: auto; --sbtn-minwidth: auto; --sbtn-height: auto; --sbtn-minheight: 2.5rem; --sbtn-py: 0.25rem; --sbtn-px: 1.25rem; --sbtn-my: 0; --sbtn-mx: 0; --sbtn-gap: 0.5rem; --sbtn-text-decoration: none; --sbtn-fs: 1rem; --sbtn-fw: 400; --sbtn-border-radius: 0.5rem; --sbtn-clr: white; --sbtn-bg: #007bff; --sbtn-border-width: 1px; --sbtn-border-style: solid; --sbtn-border-clr: transparent; --sbtn-opacity: 1; --sbtn-boxshadow: none; --sbtn-outline: 0; --sbtn-lh: 1.5; // States --sbtn-hover-opacity: 0.7; --sbtn-disabled-opacity: 0.4; --sbtn-disabled-clr: white; --sbtn-disabled-bg: gray; --sbtn-disabled-border-clr: gray; // SM --sbtn-px-sm: 1rem; --sbtn-minheight-sm: 2rem; --sbtn-fs-sm: 0.875rem; --sbtn-border-radius-sm: 0.25rem; // LG --sbtn-px-lg: 1.5rem; --sbtn-minheight-lg: 3.5rem; --sbtn-fs-lg: 1rem; --sbtn-border-radius-lg: 0.875rem; // XL --sbtn-px-xl: 1.5rem; --sbtn-minheight-xl: 4rem; --sbtn-fs-xl: 1rem; --sbtn-border-radius-xl: 1rem; // Icon --sbtn-icon-px: 0.25rem; --sbtn-icon-lh: 1; --sbtn-icon-minheight: 2rem;"
       }
     ]
