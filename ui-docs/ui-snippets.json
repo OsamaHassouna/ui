@@ -57,12 +57,10 @@
         "code": " --sbtn-transition: 0.2s; --sbtn-justify-content: center; --sbtn-txtalign: center; --sbtn-width: auto; --sbtn-minwidth: auto; --sbtn-height: auto; --sbtn-minheight: 2.5rem; --sbtn-py: 0.25rem; --sbtn-px: 1.25rem; --sbtn-my: 0; --sbtn-mx: 0; --sbtn-gap: 0.5rem; --sbtn-text-decoration: none; --sbtn-fs: 1rem; --sbtn-fw: 400; --sbtn-border-radius: 0.5rem; --sbtn-clr: white; --sbtn-bg: #007bff; --sbtn-border-width: 1px; --sbtn-border-style: solid; --sbtn-border-clr: transparent; --sbtn-opacity: 1; --sbtn-boxshadow: none; --sbtn-outline: 0; --sbtn-lh: 1.5; // States --sbtn-hover-opacity: 0.7; --sbtn-disabled-opacity: 0.4; --sbtn-disabled-clr: white; --sbtn-disabled-bg: gray; --sbtn-disabled-border-clr: gray; // SM --sbtn-px-sm: 1rem; --sbtn-minheight-sm: 2rem; --sbtn-fs-sm: 0.875rem; --sbtn-border-radius-sm: 0.25rem; // LG --sbtn-px-lg: 1.5rem; --sbtn-minheight-lg: 3.5rem; --sbtn-fs-lg: 1rem; --sbtn-border-radius-lg: 0.875rem; // XL --sbtn-px-xl: 1.5rem; --sbtn-minheight-xl: 4rem; --sbtn-fs-xl: 1rem; --sbtn-border-radius-xl: 1rem; // Icon --sbtn-icon-px: 0.25rem; --sbtn-icon-lh: 1; --sbtn-icon-minheight: 2rem;"
       }
     ]
-  }
-},
-{
-  "Labels": {
+  },
+  "labels": {
     "title": "Labels",
-    "description": "Here you can find the base buttons component. The .sbtn class is the core button component of the system. It uses CSS custom properties (variables) to allow complete theming and customization. All variants and sizes extend from it. Each modifier class updates the default button through scoped CSS variables — making this system themeable without touching the core styles.",
+    "description": "...",
     "variants": [
       {
         "title": "Base Label",
@@ -70,7 +68,7 @@
         "showPreview": true,
         "showCopy": true,
         "code": "<div class='slabel'>default Label</div>"
-      }
-   ]
-  },
+      }  
+    ]
+  }
 }
