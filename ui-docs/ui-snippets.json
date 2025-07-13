@@ -16,7 +16,6 @@
         "showPreview": true,
         "showCopy": true,
         "code": [
-          "<button class='sbtn sbtn-primary'>Primary</button>",
           "<button class='sbtn sbtn-primary'>Primary Button</button>",
           "<button class='sbtn sbtn-secondary'>Secondary Button</button>",
           "<button class='sbtn sbtn-third'>Third Button</button>",
