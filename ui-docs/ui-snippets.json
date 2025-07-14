@@ -26,6 +26,17 @@
         ]
       },
       {
+        "title": "Size Variants",
+        "description": "Use size variants to control button dimensions. Options include: Small, Default, Large, and Extra Large — each adjusts padding, font size, and height to suit different UI contexts.",
+        "showPreview": true,
+        "showCopy": true,
+        "code": [
+          "<button class='sbtn sbtn-sm sbtn-primary'>Small Button</button>",
+          "<button class='sbtn sbtn-lg sbtn-primary'>Large Button</button>",
+          "<button class='sbtn sbtn-xl sbtn-primary'>Extra Large Button</button>"
+        ]
+      },
+      {
         "title": "Style Variants",
         "description": "Buttons support multiple styles: Outline, Link, and Icon-only. You can mix styles — for example, use .sbtn-outline or .sbtn-link with icon buttons for minimal UI.",
         "showPreview": true,
@@ -36,17 +47,6 @@
           "<button class='sbtn sbtn-icon sbtn-primary'>X</button>",
           "<button class='sbtn sbtn-icon sbtn-primary sbtn-outline'>X</button>",
           "<button class='sbtn sbtn-icon sbtn-primary sbtn-link'>X</button>"
-        ]
-      },
-      {
-        "title": "Size Variants",
-        "description": "Use size variants to control button dimensions. Options include: Small, Default, Large, and Extra Large — each adjusts padding, font size, and height to suit different UI contexts.",
-        "showPreview": true,
-        "showCopy": true,
-        "code": [
-          "<button class='sbtn sbtn-sm sbtn-primary'>Small Button</button>",
-          "<button class='sbtn sbtn-lg sbtn-primary'>Large Button</button>",
-          "<button class='sbtn sbtn-xl sbtn-primary'>Extra Large Button</button>"
         ]
       },
       {
@@ -94,6 +94,23 @@
           "<div class='stag stag-primary'>Default Tag</div>",
           "<div class='stag stag-lg stag-primary'>Large Tag</div>"
         ]
+      },
+      {
+        "title": "Style Variants",
+        "description": "Tags support multiple styles with icons and text or removable tag with close icon.",
+        "showPreview": true,
+        "showCopy": true,
+        "code": [
+          "<div class='stag stag-primary'><span class'stag-title'>X tag with icon</span><span class'stag-close'><svg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0.758367 7.99566C0.562236 8.0072 0.369342 7.94124 0.220357 7.81168C-0.0734523 7.51269 -0.0734523 7.02979 0.220357 6.7308L6.65382 0.222481C6.9594 -0.0667934 7.43892 -0.0507128 7.72487 0.258429C7.98344 0.537985 7.99851 0.967669 7.76015 1.26505L1.28879 7.81168C1.14174 7.93937 0.951925 8.00521 0.758367 7.99566Z' fill='currentColor'/><path d='M7.1852 7.99586C6.98641 7.99501 6.79591 7.91517 6.65475 7.77356L0.221272 1.26522C-0.0509269 0.943658 -0.01392 0.459724 0.303945 0.184334C0.587648 -0.0614447 1.00605 -0.0614447 1.28973 0.184334L7.76109 6.69265C8.06661 6.982 8.0824 7.46712 7.79638 7.77619C7.785 7.78848 7.77325 7.80037 7.76109 7.81188C7.68269 7.88085 7.59112 7.93276 7.49205 7.96441C7.39298 7.99606 7.28853 8.00677 7.1852 7.99586Z' fill='currentColor'/></svg></span></div>",
+          "<div class='stag stag-primary'><span class'stag-title'>X tag with icon</span></div>"
+        ]
+      },
+      {
+        "title": "Custom Classes (Variables)",
+        "description": "Customize tags by adding your own classes and overriding CSS variables. This lets you create new tags styles that match your theme without touching the core tag structure.",
+        "showPreview": false,
+        "showCopy": false,
+        "code": "--stag-display-Xalignment: center; --stag-gap: 0.5rem; --stag-my: 0; --stag-mx: 0.5rem; --stag-py: 0.5rem; --stag-px: 1rem; --stag-width: auto; --stag-minwidth: auto; --stag-height: auto; --stag-minheight: auto; --stag-fs: 1rem; --stag-fw: 400; --stag-lh: 1.2; --stag-clr: #495057; --stag-bg: #fcfcfd; --stag-border-width: 1px; --stag-border-style: solid; --stag-border-clr: #e9ecef; --stag-border-radius: 0.375rem; --stag-opacity: 1; --stag-boxshadow: none; //SM --stag-px-sm: 0.375rem; --stag-py-sm: 0.25rem; --stag-fs-sm: 0.75rem; //LG --stag-px-lg: 1rem; --stag-py-lg: 1.5rem; --stag-fs-lg: 1rem; //Icon --stag-title-gap: 0.25rem; //Close --stag-close-width: 1rem; --stag-close-height: 1rem; --stag-close-clr: #495057; --stag-close-bg: #fcfcfd; --stag-close-border-width: 1px; --stag-close-border-style: solid; --stag-close-border-clr: #e9ecef; --stag-close-border-radius: 0.25rem; --stag-close-icon-width: 0.5rem; --stag-close-icon-height: 0.5rem;"
       }
     ]
   }
