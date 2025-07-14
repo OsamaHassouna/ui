@@ -67,7 +67,7 @@
         "description": "This is the basic class of tag component which holds all the properties (variables) for the future customization and Theming.",
         "showPreview": true,
         "showCopy": true,
-        "code": "<div class='stag'>default Tag</div>"
+        "code": "<div class='stag'>Default Tag</div>"
       },
       {
         "title": "Color Variants",
@@ -75,24 +75,24 @@
         "showPreview": true,
         "showCopy": true,
         "code": [
-          "<div class='stag stag-primary'>Primary B</div>",
-          "<div class='stag stag-secondary'>Secondary B</div>",
-          "<div class='stag stag-third'>Third B</div>",
-          "<div class='stag stag-success'>Success B</div>",
-          "<div class='stag stag-warning'>Warning B</div>",
-          "<div class='stag stag-danger'>Danger B</div>",
-          "<div class='stag stag-info'>info B</div>"
+          "<div class='stag stag-primary'>Primary Tag</div>",
+          "<div class='stag stag-secondary'>Secondary Tag</div>",
+          "<div class='stag stag-third'>Third Tag</div>",
+          "<div class='stag stag-success'>Success Tag</div>",
+          "<div class='stag stag-warning'>Warning Tag</div>",
+          "<div class='stag stag-danger'>Danger Tag</div>",
+          "<div class='stag stag-info'>info Tag</div>"
         ]
       },
       {
         "title": "Size Variants",
-        "description": "Use size variants to control tags dimensions. Options include: Small, Default, Large, and Extra Large — each adjusts padding, font size, and height to suit different UI contexts.",
+        "description": "Use size variants to control tags dimensions. Options include: Small, Default, and Large — each adjusts padding, font size, and height to suit different UI contexts.",
         "showPreview": true,
         "showCopy": true,
         "code": [
           "<div class='stag stag-sm stag-primary'>Small Tag</div>",
-          "<div class='stag stag-lg stag-primary'>Large Tag</div>",
-          "<div class='stag stag-xl stag-primary'>Extra Large Tag</div>"
+          "<div class='stag stag-primary'>Default Tag</div>",
+          "<div class='stag stag-lg stag-primary'>Large Tag</div>"
         ]
       }
     ]
